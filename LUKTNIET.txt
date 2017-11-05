@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <script>
+
+    
+    
+            function rij1(q){
+               
+            document.getElementById('button1'+q).innerHTML = 'MIS';
+            document.getElementById('button1'+q).style.backgroundColor = 'lightblue';
+        
+       }
+       
+            function rij2(q){
+            
+            
+            if (q == 2||q== 3||q==4){
+            document.getElementById('button2'+q).innerHTML = 'RAAK';
+            document.getElementById('button2'+q).style.backgroundColor = 'red';
+        }  
+            if(q==0||q==1||q>4){
+            document.getElementById('button2'+q).innerHTML = 'MIS';
+            document.getElementById('button2'+q).style.backgroundColor = 'lightblue';
+        }
+       }
+       
+            function rij3(q){
+            
+            
+            if (q==8)
+            document.getElementById('button3'+q).innerHTML = 'RAAK';
+            document.getElementById('button3'+q).style.backgroundColor = 'red';
+               
+            if (q<=7 ||q>=9)
+            document.getElementById('button3'+q).innerHTML = 'MIS';
+            document.getElementById('button3'+q).style.backgroundColor = 'lightblue';
+            
+       }
+       
+            function rij4(q){
+            
+            
+            if (q==4||q==8)
+            document.getElementById('button4'+q).innerHTML = 'RAAK';
+            document.getElementById('button4'+q).style.backgroundColor = 'red';
+               
+            if (q != 4||q!=8)
+            document.getElementById('button4'+q).innerHTML = 'MIS';
+            document.getElementById('button4'+q).style.backgroundColor = 'lightblue';
+            
+       }
+       
+            function rij5(q){
+            
+            
+            if (q == 4)
+            document.getElementById('button5'+q).innerHTML = 'RAAK';
+            document.getElementById('button5'+q).style.backgroundColor = 'red';
+               
+            if (q != 4)
+            document.getElementById('button5'+q).innerHTML = 'MIS';
+            document.getElementById('button5'+q).style.backgroundColor = 'lightblue';
+            
+       }
+       
+            function rij6(q){
+            
+            
+            if (q==4||q==7)
+            document.getElementById('button6'+q).innerHTML = 'RAAK';
+            document.getElementById('button6'+q).style.backgroundColor = 'red';
+               
+            if (q!=4||q!=7)
+            document.getElementById('button6'+q).innerHTML = 'MIS';
+            document.getElementById('button6'+q).style.backgroundColor = 'lightblue';
+            
+       }
+       
+            function rij7(q){
+            
+            
+            if (q <= 2)
+            document.getElementById('button7'+q).innerHTML = 'RAAK';
+            document.getElementById('button7'+q).style.backgroundColor = 'red';
+               
+            if (q >= 3)
+            document.getElementById('button7'+q).innerHTML = 'MIS';
+            document.getElementById('button7'+q).style.backgroundColor = 'lightblue';
+            
+       }
+       
+            function rij8(q){
+            
+            
+            if (q == 7)
+            document.getElementById('button8'+q).innerHTML = 'RAAK';
+            document.getElementById('button8'+q).style.backgroundColor = 'red';
+               
+            if (q != 7)
+            document.getElementById('button8'+q).innerHTML = 'MIS';
+            document.getElementById('button8'+q).style.backgroundColor = 'lightblue';
+            
+       }
+            function rij9(q){
+             if (q == 7)
+            document.getElementById('button9'+q).innerHTML = 'RAAK';
+            document.getElementById('button9'+q).style.backgroundColor = 'red';
+               
+            if (q != 7)
+            document.getElementById('button9'+q).innerHTML = 'MIS';
+            document.getElementById('button9'+q).style.backgroundColor = 'lightblue';
+
+       
+            
+       }
+            function rij10(q){
+            
+            
+            if (q == 7)
+            document.getElementById('button10'+q).innerHTML = 'RAAK';
+            document.getElementById('button10'+q).style.backgroundColor = 'red';
+               
+            if (q != 7)
+            document.getElementById('button10'+q).innerHTML = 'MIS';
+            document.getElementById('button10'+q).style.backgroundColor = 'lightblue';
+
+       }
+        
+
+        </script>
+        <style>
+           
+            #button:hover{background-color: tomato}
+           
+           #button {
+    background-color: darkslategray;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    cursor: crosshair;
+     
+}
+
+            
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        <p>Zeeslag</p>
+     
+     
+    <table>
+            <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij1('. $x.') type=button id=button1'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+ <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij2('. $x.') type=button id=button2'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij3('. $x.') type=button id=button3'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij4('. $x.') type=button id=button4'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij5('. $x.') type=button id=button5'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij6('. $x.') type=button id=button6'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij7('. $x.') type=button id=button7'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij8('. $x.') type=button id=button8'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij9('. $x.') type=button id=button9'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+             <tr>
+                <?php
+                for($x =0;$x<10;$x++){
+                    echo '<td><button onclick=rij10('. $x.') type=button id=button10'. $x .'>_</button></td>';
+
+                }
+                
+                ?>
+            </tr>
+            
+    </table>
+        
+    </body>
+    
+    
+    
+</html>
